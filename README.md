@@ -6,14 +6,14 @@ A **Model Context Protocol (MCP)** server written in TypeScript that aggregates,
 
 - **Fetch Top Headlines** by country (ISO‑2 code), language (ISO‑639‑1 code), and category (e.g., business, sports).
 - **Search Everything** via full‑text queries (keywords) with optional filters: language, date range, sorting, page size.
-- **Format to Markdown**: Convert raw JSON responses into a clean, reader‑friendly Markdown digest using an LLM (Gemini or Claude).
+- **Format to Markdown**: Convert raw JSON responses into a clean, reader‑friendly Markdown digest using an LLM (Gemini and Claude).
 
 ## Requirements
 
 - **Node.js 18+** (for built‑in `fetch` support)
 - **npm** or **yarn**
 - **NewsAPI.org API key** (free tier available)
-- **LLM API key** (Gemini or Claude)
+- **LLM API key** (Gemini and Claude)
 
 ## Installation
 
