@@ -35,7 +35,6 @@ Create a `.env` file in the project root:
 # .env
 NEWSAPI_KEY=<your_newsapi_key>
 GEMINI_API_KEY=<your_gemini_key>   # for Google Gemini
-# or
 ANTHROPIC_API_KEY=<your_claude_key>  # for Anthropic Claude
 ```
 
