@@ -10,8 +10,9 @@ import {
   LanguageCode,
   CategoryEnum,
   normalizeKeywords,
-} from "./utils";
+} from "./fetchNewsUtils";
 import dotenv from 'dotenv';
+import { sendEmail } from "./sendGmailUtils";
 dotenv.config();
 
 const server = new McpServer({
@@ -49,6 +50,8 @@ server.tool(
 
     // 2) format
     const md = await generateMarkdown(news);
+
+    const sentEmail = await sendEmail(md)
 
     // 3) return Markdown directly
     return {
@@ -168,5 +171,5 @@ server.tool(
   }
 );
 
-const transport = new StdioServerTransport();
-await server.connect(transport);
+// const transport = new StdioServerTransport();
+// await server.connect(transport);
