@@ -2,6 +2,10 @@
 
 A **Model Context Protocol (MCP)** server written in TypeScript that aggregates, searches, and formats news articles using the NewsAPI.org REST endpoints.
 
+<a href="https://glama.ai/mcp/servers/@SomeiLam/news-mcp">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@SomeiLam/news-mcp/badge" alt="NewsDigest MCP server" />
+</a>
+
 ## Features
 
 - **Fetch Top Headlines** by country (ISO‑2 code), language (ISO‑639‑1 code), and category (e.g., business, sports).
